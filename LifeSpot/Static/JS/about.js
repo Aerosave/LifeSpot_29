@@ -27,3 +27,29 @@ const writeReview = review => {
         `<p>${review['comment']}</p>` +
         '</div>';
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Автоматическое переключение слайдов каждые 3 секунды
+    setInterval(nextSlide, 3000);
+
+    // Показать первый слайд при загрузке страницы
+    showSlide(currentSlide);
+});

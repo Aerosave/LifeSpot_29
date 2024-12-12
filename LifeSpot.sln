@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeSpot", "LifeSpot\LifeSpot.csproj", "{EB3157F0-43E0-46C7-9771-F7B93A68A836}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeSpot", "LifeSpot\LifeSpot.csproj", "{EB3157F0-43E0-46C7-9771-F7B93A68A836}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8C45A52A-734F-4072-98F0-CA70A02261AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{6944D636-F2DE-4A95-A3DF-160B612770E4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EB3157F0-43E0-46C7-9771-F7B93A68A836} = {8C45A52A-734F-4072-98F0-CA70A02261AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADA5C80E-48D2-4F52-ADFD-A3C6B7A20BD5}
 	EndGlobalSection
 EndGlobal

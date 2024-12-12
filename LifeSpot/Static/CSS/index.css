@@ -74,3 +74,25 @@ header, footer, body, .video-container {
     padding-left: 1%;
     padding-top: 1%;
 }
+
+/*стиль для слайдера*/
+.slider {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: none;
+}
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide.active {
+        display: block;
+    }
